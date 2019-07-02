@@ -13,18 +13,22 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class NewClass extends cc.Component {
 
-    @property(cc.Sprite)
-    back: cc.Sprite = null;
+    
     // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {}
+    animation: cc.Animation = null;
+    nullAnim: cc.Animation = null;
+    
+    onLoad () {
+        this.animation = this.node.getComponent(cc.Animation);
+        // console.log(cc.find("/Canvas/map/null"))
+        this.nullAnim = cc.find("Canvas/map/null").getComponent(cc.Animation);
+        this.node.on("click",(e)=>{
+            this.nullAnim.play("TanB")
+        })
+    }
 
     start () {
-        // this.node.scale=.5;
-        // let component = this.getComponent("layout").schedule(function(){
-        //     this.node.scale=1;
-        // },2,1)
-        // let showSize = cc.sequence();
+
     }
 
     // update (dt) {}

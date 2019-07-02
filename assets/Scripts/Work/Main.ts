@@ -13,18 +13,14 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class NewClass extends cc.Component {
 
-    @property(cc.Sprite)
-    back: cc.Sprite = null;
+
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
 
     start () {
-        // this.node.scale=.5;
-        // let component = this.getComponent("layout").schedule(function(){
-        //     this.node.scale=1;
-        // },2,1)
-        // let showSize = cc.sequence();
+        // console.log(wx)
+ 
     }
 
     // update (dt) {}
