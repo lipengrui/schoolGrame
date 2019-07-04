@@ -766,6 +766,9 @@
     "_level": 2,
     "_components": [
       {
+        "__id__": 25
+      },
+      {
         "__id__": 26
       }
     ],
@@ -837,13 +840,10 @@
       },
       {
         "__id__": 23
-      },
-      {
-        "__id__": 24
       }
     ],
     "_prefab": {
-      "__id__": 25
+      "__id__": 24
     },
     "_opacity": 255,
     "_color": {
@@ -855,7 +855,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 15,
+      "width": 0,
       "height": 100
     },
     "_anchorPoint": {
@@ -983,7 +983,7 @@
       "__id__": 17
     },
     "asset": {
-      "__uuid__": "d3309ed9-ccbf-4373-b644-54b7c5e16414"
+      "__uuid__": "7ac9d9fd-169c-4501-bc67-e56daa67b199"
     },
     "fileId": "26Mywr4CZHYrjH0NKTBqPm",
     "sync": false
@@ -1015,8 +1015,8 @@
     "alignMode": 1,
     "_target": null,
     "_alignFlags": 45,
-    "_left": 41.435,
-    "_right": 41.435,
+    "_left": 48.935,
+    "_right": 48.935,
     "_top": -24.8,
     "_bottom": -24.8,
     "_verticalCenter": 0,
@@ -1032,23 +1032,12 @@
     "_id": "d8E/TYNoZJbqHANQMUERLc"
   },
   {
-    "__type__": "61011lkYl1PLKuYmktCzO8C",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 18
-    },
-    "_enabled": true,
-    "parentLabel": null,
-    "_id": "3dA4iOMT5LO6WiYWzt+gep"
-  },
-  {
     "__type__": "cc.PrefabInfo",
     "root": {
       "__id__": 17
     },
     "asset": {
-      "__uuid__": "d3309ed9-ccbf-4373-b644-54b7c5e16414"
+      "__uuid__": "7ac9d9fd-169c-4501-bc67-e56daa67b199"
     },
     "fileId": "7e32QvNdFK4YmpFyS25dli",
     "sync": false
@@ -1080,12 +1069,22 @@
     "_id": "e4PN6At2RMH5eJLO000Rv/"
   },
   {
+    "__type__": "61011lkYl1PLKuYmktCzO8C",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 17
+    },
+    "_enabled": true,
+    "_id": "9fSMgnqh9EPoyunwc5HJLL"
+  },
+  {
     "__type__": "cc.PrefabInfo",
     "root": {
       "__id__": 17
     },
     "asset": {
-      "__uuid__": "d3309ed9-ccbf-4373-b644-54b7c5e16414"
+      "__uuid__": "7ac9d9fd-169c-4501-bc67-e56daa67b199"
     },
     "fileId": "2bfOD2e5pEvbXaBLy2fC17",
     "sync": false
@@ -1099,7 +1098,7 @@
     },
     "_enabled": true,
     "labelText": {
-      "__uuid__": "d3309ed9-ccbf-4373-b644-54b7c5e16414"
+      "__uuid__": "7ac9d9fd-169c-4501-bc67-e56daa67b199"
     },
     "_id": "35R/Nk6xpNzZi4YviBvX6K"
   }

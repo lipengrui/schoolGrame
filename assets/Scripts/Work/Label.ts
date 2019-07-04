@@ -13,8 +13,6 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class NewClass extends cc.Component {
 
-    @property(cc.Label)
-    parentLabel: cc.Label = null;
 
 
     // LIFE-CYCLE CALLBACKS:
@@ -22,6 +20,12 @@ export default class NewClass extends cc.Component {
     // onLoad () {}
     
     start () {
+        // let label = this.node.getComponent(cc.Label);
+        // label.string = "1111111111111112"
+        // // this.parentLabel.string = "qweqwe";
+        // // this.childLabel.string = "qweqwe";
+        // console.log(33,this.node)
+        // console.log(444,this.parentLabel)
         // console.log(111,this.node.getChildByName("newlab"))
     }
 

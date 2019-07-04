@@ -16,40 +16,61 @@ export default class NewClass extends cc.Component {
     @property(cc.Prefab)
     labelText:cc.Prefab = null;
 
+    labelNode: cc.Node = null;
+    nullNode: cc.Node = null;
+    newLabelNode : cc.Node = null;
+    labelOK: boolean = false;
     // LIFE-CYCLE CALLBACKS:
 
+    labelWidth: Number = 0;
     // onLoad () {}
 
     start () {
         
-        let e1 = cc.instantiate(this.labelText);
+        this.labelNode = cc.instantiate(this.labelText);
         
         // this.node.addComponent("Text");
         
-        e1.x = 0;
-        e1.y = 0;
+        this.labelNode.x = 0;
+        this.labelNode.y = 0;
         
-        let e1Null = e1.getChildByName("null");
+        this.nullNode = this.labelNode.getChildByName("null");
         
         
-        let newlab = e1Null.getChildByName("newlab");
-        let nullX = (e1Null.width/2);
-        newlab.x = nullX;
-        e1Null.x = -nullX;
-        e1.setParent(this.node);
-        
-        // e1Null.setPosition(,e1Null.y)
-        setInterval(function(){
-            e1.string = "123123"
-            e1Null.width+= 10;
-        },300)
-        console.log(e1,e1Null)
-        // e1Null.schedule(function() {
-        //     // 这里的 this 指向 component
-        //    console.log(111)
-        //    console.log(this)
-        // }, 3 );
+        this.newLabelNode = this.nullNode.getChildByName("newlab");
+        let nullX = (this.nullNode.width/2);
+        this.newLabelNode.x = nullX;
+        this.nullNode.x = -nullX;
+        this.setLabel('66666666');
+        this.labelNode.setParent(this.node);
+        var timeCallback = function (dt) {
+            this.nullNode.width = 0;
+          }
+        this.scheduleOnce(timeCallback, 0.001);
+        setTimeout(()=>{
+            this.setOk();
+        },2000)
+
+    }
+    setOk(){
+        this.labelOK = true;
+        this.labelWidth = this.labelNode.width;
+        cc.tween(this.nullNode)
+            .to(1, {width: this.labelWidth},{easing:'quadInOut'})
+            .call(() => { console.log('This is a callback'); })
+            .start();
+    }
+    setLabel(str:string){
+        this.labelNode.getComponent(cc.Label).string = str;
+        this.newLabelNode.getComponent(cc.Label).string = str;
     }
 
-    // update (dt) {}
+    update (dt) {
+        
+        // if(this.labelOK&& (this.nullNode.width <= this.labelWidth)){
+        //     console.log(dt)
+        //     this.nullNode.width += 5;
+        // }
+        // rr.width = 0;
+    }
 }
