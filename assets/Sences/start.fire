@@ -17,7 +17,7 @@
         "__id__": 2
       },
       {
-        "__id__": 16
+        "__id__": 17
       }
     ],
     "_active": true,
@@ -82,7 +82,7 @@
     "_level": 1,
     "_components": [
       {
-        "__id__": 15
+        "__id__": 16
       }
     ],
     "_prefab": null,
@@ -167,7 +167,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 0
+      "z": 831.3843876330611
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -356,7 +356,7 @@
     "_level": 2,
     "_components": [
       {
-        "__id__": 14
+        "__id__": 15
       }
     ],
     "_prefab": null,
@@ -421,10 +421,10 @@
     "_level": 2,
     "_components": [
       {
-        "__id__": 12
+        "__id__": 13
       },
       {
-        "__id__": 13
+        "__id__": 14
       }
     ],
     "_prefab": null,
@@ -486,6 +486,9 @@
     "_components": [
       {
         "__id__": 11
+      },
+      {
+        "__id__": 12
       }
     ],
     "_prefab": null,
@@ -559,6 +562,16 @@
     "_N$overflow": 1,
     "_N$cacheMode": 0,
     "_id": "a1Vx9yN1hCYJPsrmyMv7fI"
+  },
+  {
+    "__type__": "2dd3b+yeilBQLz56ZMfWJaa",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 10
+    },
+    "_enabled": true,
+    "_id": "c7yHlTu+1NS7JmmTEOzpMf"
   },
   {
     "__type__": "cc.Sprite",
@@ -676,10 +689,10 @@
       "__uuid__": "c9545cce-5789-4985-a492-fd588f712cf1"
     },
     "_N$pressedSprite": {
-      "__uuid__": "d96284c2-6364-435e-9335-dc6f0f380409"
+      "__uuid__": "c9545cce-5789-4985-a492-fd588f712cf1"
     },
     "pressedSprite": {
-      "__uuid__": "d96284c2-6364-435e-9335-dc6f0f380409"
+      "__uuid__": "c9545cce-5789-4985-a492-fd588f712cf1"
     },
     "_N$hoverSprite": {
       "__uuid__": "c9545cce-5789-4985-a492-fd588f712cf1"
@@ -724,7 +737,7 @@
     "_level": 1,
     "_components": [
       {
-        "__id__": 17
+        "__id__": 18
       }
     ],
     "_prefab": null,
@@ -776,7 +789,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 16
+      "__id__": 17
     },
     "_enabled": true,
     "_materials": [],
